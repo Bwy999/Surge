@@ -1,0 +1,76 @@
+# Apple Global CDN
+# iOS App Store
+DOMAIN,iosapps.itunes.apple.com
+# Mac App Store
+DOMAIN,osxapps.itunes.apple.com
+# Update
+DOMAIN,supportdownload.apple.com
+# Update
+DOMAIN,appldnld.apple.com
+# Update
+DOMAIN,swcdn.apple.com
+DOMAIN,apptrailers.itunes.apple.com
+DOMAIN,updates-http.cdn-apple.com
+# App Store & iTunes Images
+DOMAIN-SUFFIX,mzstatic.com
+# Mac App Store
+PROCESS-NAME,storedownloadd
+# iOS App Store
+USER-AGENT,com.apple.appstored*
+# Apple 直连
+#
+USER-AGENT,*com.apple.mobileme.fmip1
+# Weather
+USER-AGENT,*WeatherFoundation*
+DOMAIN,weather-analytics-events.apple.com
+# Maps
+USER-AGENT,%E5%9C%B0%E5%9B%BE*
+# Settings
+USER-AGENT,%E8%AE%BE%E7%BD%AE*
+USER-AGENT,com.apple.geod*
+USER-AGENT,com.apple.Maps
+USER-AGENT,FindMyFriends*
+USER-AGENT,FindMyiPhone*
+USER-AGENT,FMDClient*
+USER-AGENT,FMFD*
+USER-AGENT,fmflocatord*
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+#
+# Apple 其他直连
+#
+DOMAIN,api.smoot.apple.com
+DOMAIN,captive.apple.com
+DOMAIN,configuration.apple.com
+DOMAIN,guzzoni.apple.com
+# Apple Pay
+DOMAIN,smp-device-content.apple.com
+# Apple Music Streaming
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api.smoot.apple.cn
+# locationd
+DOMAIN,gs-loc.apple.com
+# Apple Music Streaming
+DOMAIN,mvod.itunes.apple.com
+# Apple Music Streaming
+DOMAIN,streamingaudio.itunes.apple.com
+# Reserve
+DOMAIN,reserve-prime.apple.com
+DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,push.apple.com
+# Apple Music
+DOMAIN-SUFFIX,music.apple.com
+# GeoServices.framework
+DOMAIN-SUFFIX,ls.apple.com
+# Asset Cache Locator Service
+DOMAIN-SUFFIX,lcdn-locator.apple.com
+# Caching Server Registration
+DOMAIN-SUFFIX,lcdn-registration.apple.com
+# Apple Pay
+DOMAIN-KEYWORD,smp-device
+# Apple Pay
+USER-AGENT,passd*
+# Apple Pay
+USER-AGENT,Wallet*
