@@ -3,5 +3,3 @@
 ### Surge 官方网站：https://nssurge.com
 ### Surge App Store下载地址：https://apps.apple.com/us/app/surge-4/id1442620678
 ### Surge 官方配置规范：https://manual.nssurge.com
-### Surge 官方配置规范（中文FlintyLemming）https://surge-wiki.headto.icu/
-
