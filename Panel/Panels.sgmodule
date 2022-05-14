@@ -18,7 +18,7 @@ stream-all = script-name=stream-all, title="流媒体解锁检测", content="请
 TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
 
 #网络信息
-net-info-panel = script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Panel/Net-info-panel.js,type=generic,script-update-interval=0
+net-info-panel = script-path=https://raw.githubusercontent.com/Bwy999/Surge/master/Script/Net-info-panel.js,type=generic,script-update-interval=0
 
 # 流媒体解锁检测
 stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
