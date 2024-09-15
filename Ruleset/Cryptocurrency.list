@@ -196,7 +196,7 @@ DOMAIN,nft.kraken.com
 DOMAIN,blog.kraken.com
 DOMAIN,krakenpro.onl
 DOMAIN,kraken.pxf.io
-DOMAIN-suffix,kraken.com
+DOMAIN-SUFFIX,kraken.com
 DOMAIN-KEYWORD,kraken
 DOMAIN-KEYWORD,krakenpro
 #RelatedDomains
