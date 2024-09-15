@@ -29,7 +29,7 @@ DOMAIN-SUFFIX,gatedata.org
 DOMAIN-SUFFIX,gateimg.com
 DOMAIN-SUFFIX,gate.io
 #Bybit
-DOMAIN-keyword,bybit
+DOMAIN-KEYWORD,bybit
 DOMAIN-SUFFIX,bybitglobal.com
 DOMAIN-SUFFIX,bybit.org
 DOMAIN-SUFFIX,bybdc6.com
@@ -197,8 +197,8 @@ DOMAIN,blog.kraken.com
 DOMAIN,krakenpro.onl
 DOMAIN,kraken.pxf.io
 DOMAIN-suffix,kraken.com
-DOMAIN-keyword,kraken
-DOMAIN-keyword,krakenpro
+DOMAIN-KEYWORD,kraken
+DOMAIN-KEYWORD,krakenpro
 #RelatedDomains
 DOMAIN,p.sardine.ai
 DOMAIN,api.sardine.ai
