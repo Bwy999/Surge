@@ -30,16 +30,159 @@ DOMAIN-SUFFIX,sushi.com
 DOMAIN-SUFFIX,uniswap.org
 DOMAIN-SUFFIX,zb.com
 # > Binance
-DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,bnappzh.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
+DOMAIN, www.binance.com, Binance
+DOMAIN, api.binance.com, Binance
+DOMAIN, fapibak.binance.com, Binance
+DOMAIN, accounts.binance.com, Binance
+DOMAIN, native.binance.com, Binance
+DOMAIN, stream.binance.com, Binance
+DOMAIN, dstream.binance.com, Binance
+DOMAIN, fstream.binance.com, Binance
+DOMAIN, nbstream.binance.com, Binance
+DOMAIN, sfstream.binance.com, Binance
+DOMAIN, themis.binance.com, Binance
+DOMAIN, www.binance.click, Binance
+DOMAIN, api.saasexch.cc, Binance
+DOMAIN, api.saasexch.co, Binance
+DOMAIN, api.saasexch.io, Binance
+DOMAIN, api.saasexch.com, Binance
+DOMAIN, report.binance.im, Binance
+DOMAIN, www.binance.info, Binance
+DOMAIN, accounts.binance.info, Binance
+DOMAIN, edge-api.saasexch.com, Binance
+DOMAIN, stream.binance.info, Binance
+DOMAIN, fstream.binance.info, Binance
+DOMAIN, dstream.binance.info, Binance
+DOMAIN, nbstream.binance.info, Binance
+DOMAIN, native.binance.info, Binance
+DOMAIN, log.bntrace.com, Binance
+DOMAIN, public.bnbstatic.com, Binance
+DOMAIN, bin.bnbstatic.com, Binance
+DOMAIN, www.binancecnt.com, Binance
+DOMAIN, reslove.saasexch.com, Binance
+DOMAIN, www.yingwangtech.cloud, Binance
+DOMAIN, sdstream.yingwangtech.net, Binance
+DOMAIN, nbstream.yingwangtech.net, Binance
+DOMAIN, stream.yingwangtech.net, Binance
+DOMAIN, sfstream.yingwangtech.net, Binance
+DOMAIN, fstream.yingwangtech.net, Binance
+DOMAIN, www.yingwangtech.net, Binance
+DOMAIN, www.yingwangtech.mobi, Binance
+DOMAIN, www.yingwangtech.club, Binance
+DOMAIN, www.yingwangtech.cc, Binance
+
+# Related Domains
+DOMAIN, m.api.forter.com, Binance
+DOMAIN, www.mokexapp.me, Binance
+DOMAIN, www.mokexapp.net, Binance
+DOMAIN, native.mokexapp.net, Binance
+DOMAIN, crt.r2m01.amazontrust.com, Binance
+DOMAIN, crt.rootca1.amazontrust.com, Binance
+DOMAIN, crt.rootg2.amazontrust.com, Binance
+DOMAIN, d3sknckuh1o9tg.cloudfront.net, Binance
+DOMAIN, public-1306379396.file.myqcloud.com, Binance
+DOMAIN, domain-config-1306379396.file.myqcloud.com, Binance
+DOMAIN, b2d8207c-e08a-45cd-bc97-268da85016d2-addfd325e6e3.cdn.forter.com, Binance
+DOMAIN, bin-prod-new-websocket-alb-1463526464.ap-northeast-1.elb.amazonaws.com, Binance
+DOMAIN, aad90d5c0e88c4b4285bd912f64d970d-1403944741.ap-northeast-1.elb.amazonaws.com, Binance
+
+DOMAIN-SUFFIX, appsflayer.com, Binance
+DOMAIN-SUFFIX, binance.cc, Binance
+DOMAIN-SUFFIX, binance.charity, Binance
+DOMAIN-SUFFIX, binance.cloud, Binance
+DOMAIN-SUFFIX, binance.co, Binance
+DOMAIN-SUFFIX, binance.com, Binance
+DOMAIN-SUFFIX, binance.info, Binance
+DOMAIN-SUFFIX, binance.me, Binance
+DOMAIN-SUFFIX, binance.im, Binance
+DOMAIN-SUFFIX, binance.net, Binance
+DOMAIN-SUFFIX, binance.org, Binance
+DOMAIN-SUFFIX, binance.us, Binance
+DOMAIN-SUFFIX, binance.vision, Binance
+DOMAIN-SUFFIX, binanceapi.com, Binance
+DOMAIN-SUFFIX, binancezh.be, Binance
+DOMAIN-SUFFIX, binancezh.biz, Binance
+DOMAIN-SUFFIX, binancezh.cc, Binance
+DOMAIN-SUFFIX, binancezh.co, Binance
+DOMAIN-SUFFIX, binancezh.com, Binance
+DOMAIN-SUFFIX, binancezh.info, Binance
+DOMAIN-SUFFIX, binancezh.ink, Binance
+DOMAIN-SUFFIX, binancezh.kim, Binance
+DOMAIN-SUFFIX, binancezh.link, Binance
+DOMAIN-SUFFIX, binancezh.live, Binance
+DOMAIN-SUFFIX, binancezh.mobi, Binance
+DOMAIN-SUFFIX, binancezh.net, Binance
+DOMAIN-SUFFIX, binancezh.pro, Binance
+DOMAIN-SUFFIX, binancezh.sh, Binance
+DOMAIN-SUFFIX, binancezh.top, Binance
+DOMAIN-SUFFIX, bnappzh.co, Binance
+DOMAIN-SUFFIX, bnbstatic.com, Binance
+DOMAIN-SUFFIX, bnbzh.ac, Binance
+DOMAIN-SUFFIX, bntrace.com, Binance
+DOMAIN-SUFFIX, binancecnt.com, Binance
+DOMAIN-SUFFIX, saasexch.cc, Binance
+DOMAIN-SUFFIX, saasexch.co, Binance
+DOMAIN-SUFFIX, saasexch.io, Binance
+DOMAIN-SUFFIX, saasexch.com, Binance
+DOMAIN-SUFFIX, yingwangtech.cloud, Binance
+DOMAIN-SUFFIX, yingwangtech.net, Binance
+DOMAIN-SUFFIX, yingwangtech.mobi, Binance
+DOMAIN-SUFFIX, yingwangtech.club, Binance
+DOMAIN-SUFFIX, yingwangtech.cc, Binance
+
+IP-CIDR, 47.107.98.27/32, Binance
+IP-CIDR, 47.107.127.135/32, Binance
+IP-CIDR, 52.68.117.1/32, Binance
+IP-CIDR, 35.77.148.188/32, Binance
+IP-CIDR, 54.150.106.1/32, Binance
+IP-CIDR, 13.248.135.87/32, Binance
+IP-CIDR, 47.107.32.31/32, Binance
+#
+DOMAIN, www.kraken.com, Kraken
+DOMAIN, iapi.kraken.com, Kraken
+DOMAIN, api.kraken.com, Kraken
+DOMAIN, status.kraken.com, Kraken
+DOMAIN, ws.kraken.com, Kraken
+DOMAIN, ws-auth.kraken.com, Kraken
+DOMAIN, ws-frontend.kraken.com, Kraken
+DOMAIN, assets-cms.kraken.com, Kraken
+DOMAIN, assets.kraken.com, Kraken
+DOMAIN, futures.kraken.com, Kraken
+DOMAIN, kraken.zendesk.com, Kraken
+DOMAIN, support.kraken.com, Kraken
+DOMAIN, surveys.kraken.com, Kraken
+DOMAIN, pro.kraken.com, Kraken
+DOMAIN, nft.kraken.com, Kraken
+DOMAIN, blog.kraken.com, Kraken
+DOMAIN, krakenpro.onl, Kraken
+DOMAIN, kraken.pxf.io, Kraken
+DOMAIN-suffix, kraken.com, Kraken
+DOMAIN-keyword, kraken, Kraken
+DOMAIN-keyword, krakenpro, Kraken
+
+# Related Domains
+DOMAIN, p.sardine.ai, Kraken
+DOMAIN, api.sardine.ai, Kraken
+DOMAIN, api.smooch.io, Kraken
+DOMAIN, cdn.branch.io, Kraken
+DOMAIN, api2.branch.io, Kraken
+DOMAIN, api3.branch.io, Kraken
+DOMAIN, ota.phraseapp.com, Kraken
+DOMAIN, sdk.iad-05.braze.com, Kraken
+DOMAIN, o552333.ingest.sentry.io, Kraken
+DOMAIN, o438986.ingest.sentry.io, Kraken
+DOMAIN, api.segment.io, Kraken
+DOMAIN, cdn-settings.segment.com, Kraken
+DOMAIN, jj04po538pzh1hj2xbk00rxkwkkpkeji.d.sardine.ai, Kraken
+DOMAIN, h5ngovfmlxqyygb0xmjil1glul1kenzs.d.sardine.ai, Kraken
+DOMAIN, 1c92053yjzs6qfgaq3uqekxj1lvh5cvk.d.sardine.ai, Kraken
+DOMAIN, 7nk68picrigdk9m5o16i3qx5k1q1rpkr.d.sardine.ai, Kraken
+DOMAIN, rwyiss3y1mlk391fw2alded0jgzqinwz.d.sardine.ai, Kraken
+DOMAIN, a4u3zimdroppcmk576rxyglwkg74bec4.d.sardine.ai, Kraken
+DOMAIN, v1ma479bgi7kh63o7bu9ovueqq9trn5d.d.sardine.ai, Kraken
+DOMAIN, x78uqm1qpg9gw957nh71738dr5ldgyg4.d.sardine.ai, Kraken
+DOMAIN-SUFFIX, sardine.ai, Kraken
+
 # > OKX
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okx.com
