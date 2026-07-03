@@ -1,5 +1,6 @@
 # =====================================================
 # HKBank.list  (Surge Ruleset 规范, 策略在主配置引用处指定)
+# 覆盖: BOCHK · HSBC HK · iFAST · Fusion · AlipayHK · ZA Bank
 # 更新: 2026-07-03
 # =====================================================
 
@@ -39,8 +40,16 @@ DOMAIN-SUFFIX,alipay.hk
 DOMAIN-SUFFIX,antbank.hk
 DOMAIN-SUFFIX,marmot-cloud.com
 DOMAIN,myh2hk.alipay.com
+
+# ---------- ZA Bank 众安银行 / ZA Invest ----------
+# 银行主域 (bankappgw/h5/appguard 等全部子域)
+DOMAIN-SUFFIX,za.group
+# ZA Invest 证券 (行情/交易/推送:8030)
+DOMAIN-SUFFIX,zainvest.group
+# 监控/埋点 (APM)
+DOMAIN-SUFFIX,zajourney.com
+# 静态资源 CDN
+DOMAIN-SUFFIX,zaticdn.com
+
 # ---------- SDK ----------
 DOMAIN-SUFFIX,appcenter.ms
-#coinbase
-DOMAIN-SUFFIX,coinbase.com
-DOMAIN-SUFFIX,cbhq.net
