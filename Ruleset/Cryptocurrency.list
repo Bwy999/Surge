@@ -205,17 +205,10 @@ DOMAIN-SUFFIX,robinhood.com
 DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,fiat24.com
 DOMAIN-SUFFIX,alchemypay.org
-DOMAIN-SUFFIX,longbridgehk.com
-DOMAIN-SUFFIX,lbkrs.com
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
-# iFAST / FSM
-DOMAIN,www.ifastglobalview.com
-DOMAIN,secure.fundsupermart.com
-DOMAIN,igb-ai-cs-communication-app-prod.azurewebsites.net
-DOMAIN,jylcpxrv.r.eu-west-2.awstrack.me
 
 # ---------- 通用 SDK / 统计 ----------
 DOMAIN-SUFFIX,sentry.io
