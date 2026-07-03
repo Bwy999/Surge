@@ -41,3 +41,6 @@ DOMAIN-SUFFIX,marmot-cloud.com
 DOMAIN,myh2hk.alipay.com
 # ---------- SDK ----------
 DOMAIN-SUFFIX,appcenter.ms
+#coinbase
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,cbhq.net
