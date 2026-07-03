@@ -1,114 +1,80 @@
-<div align="center">
+# Surge Ruleset
 
-# 🍎 Surge Apple Ruleset
+**按场景分层的 Surge 分流规则集**
 
-**为 Surge 精心调优的 Apple 分流规则集**
+*Apple 服务分层 · 加密货币 · 港美股券商 · 离岸银行*
 
-*推送直达 · 受限服务代理 · 下载 CDN 直连*
-
-<br>
-
-![Surge](https://img.shields.io/badge/Surge-5.x-FF6B00?style=flat-square&logo=apple&logoColor=white)
-![Format](https://img.shields.io/badge/Format-RULE--SET-4A90D9?style=flat-square)
-![Rules](https://img.shields.io/badge/Rules-4_Lists-9B59B6?style=flat-square)
-![Maintained](https://img.shields.io/badge/Maintained-yes-2ECC71?style=flat-square)
-
-</div>
+![Surge](https://img.shields.io/badge/Surge-5.x-F26B3A) ![Format](https://img.shields.io/badge/Format-RULE--SET-4A90D9) ![Rules](https://img.shields.io/badge/Rules-8_Lists-9B59B6) ![Maintained](https://img.shields.io/badge/Maintained-yes-2ECC71)
 
 ---
 
-## 📖 简介
+## 设计原则
 
-本规则集把 Apple 系服务按用途拆成四个独立的 `.list` 文件，交给不同策略处理，兼顾**推送及时性**、**受限服务可用性**与**下载速度**。
+一个域名只属于一个列表，一个列表只解决一类问题。
 
-> Apple 的域名体系庞杂，一刀切要么拖慢下载，要么让推送/认证走了不该走的路。本规则集的核心思路是 **按功能分层，各走各路**。
-
----
-
-## 📦 文件清单
-
-| 文件 | 用途 | 建议策略 | 说明 |
-|:---|:---|:---:|:---|
-| 🔔 `ApplePush.list` | APNs 推送 | `Apple Push` | 域名 + IP 段双保险,含 IPv6 |
-| 🌐 `AppleService.list` | 国内受限服务 | `代理` | Siri 建议、News、gateway 等 |
-| 🛒 `AppStore.list` | 账户与认证 | `代理` | Apple ID / idmsa / TestFlight |
-| 🚀 `AppleDirect.list` | 下载与 CDN | `DIRECT` | mzstatic / iCloud,直连最快 |
+- **按功能分层**——推送、下载、受限服务各走各路，互不拖累
+- **按地域归口**——金融类按业务属地（HK / SG）拆分，出口 IP 与账户属地一致，降低风控误判
+- **精确优先**——`DOMAIN` > `DOMAIN-SUFFIX`，不使用 `DOMAIN-KEYWORD`；`IP-CIDR` 一律 `no-resolve`
+- **抓包驱动**——所有条目来自真实连接记录或官方文档，不收录来源不明的域名
 
 ---
 
-## ⚙️ 引用方式
+## 文件总览
 
-在主配置 `[Rule]` 段中按 **固定顺序** 引用（顺序不可乱）：
+| 文件 | 用途 | 建议策略 |
+|---|---|---|
+| `ApplePush.list` | APNs 推送长连接 | `DIRECT` |
+| `AppleDirect.list` | 系统更新 / App 下载 / CDN | `DIRECT` |
+| `AppleService.list` | 受限服务（TV+ / 地区限定内容） | 代理 |
+| `AppStore.list` | App Store / 商店前端 | 按需 |
+| `Cryptocurrency.list` | CEX / DEX / 钱包 / 行情 / 链上 | 专用节点 |
+| `Broker.list` | moomoo/富途 · uSMART SG · 复星财富 | 香港节点 |
+| `HKBank.list` | BOCHK · HSBC HK · iFAST · Fusion Bank · AlipayHK | 香港节点 |
+| `OCBC.list` | OCBC 新加坡 | 新加坡节点 |
+
+---
+
+## 使用方式
+
+在主配置 `[Rule]` 段引用，策略在引用处指定：
 
 ```ini
-# ① 推送优先,保证及时性
-RULE-SET,https://your.host/ApplePush.list,Apple Push
+[Rule]
+# Apple — 顺序敏感，Push 必须在最前
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/ApplePush.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/AppleService.list,Proxy
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/AppStore.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/AppleDirect.list,DIRECT
 
-# ② 受限服务走代理
-RULE-SET,https://your.host/AppleService.list,PROXY
-RULE-SET,https://your.host/AppStore.list,PROXY
-
-# ③ 兜底直连(范围最大,必须放最后)
-RULE-SET,https://your.host/AppleDirect.list,DIRECT
-RULE-SET,SYSTEM,DIRECT
+# 金融
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/Cryptocurrency.list,Crypto
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/Broker.list,HK
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/HKBank.list,HK
+RULE-SET,https://raw.githubusercontent.com/<user>/<repo>/main/OCBC.list,SG
 ```
 
-> ⚠️ **顺序即优先级。** `AppleDirect.list` 含 `apple.com` 这类宽泛后缀,一旦提前引用,会把推送、认证的子域提前拦成直连。务必排在最后。
+> 规则集文件内部不含策略。Egern 用户可直接以远程 ruleset 方式引用，格式兼容。
 
 ---
 
-## 🧠 设计要点
+## 引用顺序
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Surge 按声明顺序自上而下匹配，存在交叉覆盖时**先声明者生效**：
 
-### 🔔 推送双保险
-`DOMAIN-SUFFIX,push.apple.com` 负责域名匹配,配合 `17.x` 段 IP-CIDR 兜底。所有 IP 规则均带 `no-resolve`,避免 DNS 解析拖慢首包。
-
-</td>
-<td width="50%" valign="top">
-
-### 🌐 Siri 用 SUFFIX
-`smoot.apple.com` 的实际请求是 `api.smoot.apple.com` 等子域,必须用 `DOMAIN-SUFFIX` 才能命中,精确 `DOMAIN` 会漏。
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🚀 下载走直连
-`mzstatic` / `aaplimg` / iCloud 内容分发在国内本就有节点,直连比代理更快更稳。
-
-</td>
-<td width="50%" valign="top">
-
-### 🧹 无死规则
-移除了 akadns / edgekey 等靠 CNAME 匹配的无效条目——Surge 只匹配原始 hostname,这类规则永不命中。
-
-</td>
-</tr>
-</table>
+1. `ApplePush.list` 置于所有 Apple 规则之前——推送域被其他列表劫持会导致通知延迟
+2. 金融类列表之间无交叉域名，顺序不敏感
+3. 共享风控 / SDK 域（如 ThreatMetrix、Sardine）已归入使用它的业务列表，如多个列表策略不同，将你希望优先的列表前置
 
 ---
 
-## 🔄 更新规则集
+## 维护
 
-订阅未及时刷新时:
-
-- **手动刷新** — Surge → 首页 → 长按配置 → 更新外部资源
-- **强制拉新** — 在 URL 后追加版本参数,如 `?v=2`
+- 条目来源：iOS App 隐私报告 + Surge/Egern 连接面板抓包
+- 影子域 / 备用域随官方轮换持续更新
+- 发现流量未命中：提 Issue 附域名与所属 App 即可
 
 ---
 
-<div align="center">
+## License
 
-**📚 参考**
-
-[Surge 官网](https://nssurge.com) · [配置规范](https://manual.nssurge.com) · [App Store](https://apps.apple.com/us/app/surge-4/id1442620678)
-
-<br>
-
-*Crafted for a faster, cleaner Apple experience* 🍏
-
-</div>
+MIT
