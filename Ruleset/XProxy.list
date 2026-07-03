@@ -228,13 +228,20 @@ DOMAIN-SUFFIX,zello.com
 DOMAIN-SUFFIX,zeronet.io
 DOMAIN-SUFFIX,zophar.net
 DOMAIN-SUFFIX,zyxel.com
-
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,cdn.statically.io
 DOMAIN,lab.skk.moe
 DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,search.arc.net
-
+DOMAIN-SUFFIX,dodopayments.com
+DOMAIN-SUFFIX,s.ee
+DOMAIN-SUFFIX,apphunt.cc
+DOMAIN-SUFFIX,limewire.com
+DOMAIN-SUFFIX,cuniq.com
+DOMAIN-SUFFIX,fastmail.com
+DOMAIN-SUFFIX,kanav.ad
+DOMAIN-SUFFIX,prhci.com
+DOMAIN-SUFFIX,link.com
 # > Akamai
 DOMAIN,a248.e.akamai.net
 DOMAIN,a771.dscq.akamai.net
