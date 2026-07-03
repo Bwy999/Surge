@@ -1,22 +1,43 @@
-DOMAIN-SUFFIX,hsbc.com.hk
-DOMAIN-SUFFIX,longbridgehk.com
-DOMAIN,www.bochk.com
-DOMAIN,mb.bochk.com
-DOMAIN,mba.bochk.com
-DOMAIN,ocs.bochk.com
-DOMAIN,fio.bochk.com
-DOMAIN,its.bochk.com
-DOMAIN,ewa.bochk.com
-DOMAIN,mobile.boccc.com.hk
+# =====================================================
+# HKBank.list  (Surge Ruleset 规范, 策略在主配置引用处指定)
+# 更新: 2026-07-03
+# =====================================================
+
+# ---------- 中银香港 BOCHK / BoC Pay+ ----------
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,boccc.com.hk
 DOMAIN,bochk01.etnet.com.hk
 DOMAIN,bochk02.etnet.com.hk
 DOMAIN,bochkapp01.etnet.com.hk
 DOMAIN,bochk.yundzh.com
 DOMAIN,saaszhhk.yundzh.com
-DOMAIN,mds1a.trkd-hs.com
-DOMAIN-SUFFIX,bochk.com
-DOMAIN-SUFFIX,boccc.com.hk
-DOMAIN-KEYWORD,bochk
+# 行情数据 (Refinitiv)
+DOMAIN-SUFFIX,trkd-hs.com
+
+# ---------- 汇丰香港 HSBC HK ----------
+DOMAIN-SUFFIX,hsbc.com.hk
+# HSBC 风控 (ThreatMetrix 设备指纹)
+DOMAIN-SUFFIX,online-metrix.net
+
+# ---------- iFAST Global Bank / FSM ----------
+DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-SUFFIX,fundsupermart.com
+DOMAIN,igb-ai-cs-communication-app-prod.azurewebsites.net
+DOMAIN,jylcpxrv.r.eu-west-2.awstrack.me
+# iFAST 客服聊天 (Teams 通道)
+DOMAIN,go.trouter.teams.microsoft.com
+# iFAST 反欺诈 SDK (Zimperium zDefend)
+DOMAIN-SUFFIX,zimperium.com
+
+# ---------- Fusion Bank 富融银行 ----------
+DOMAIN-SUFFIX,fusionbank.com
+# 腾讯云香港推送 TPNS
+DOMAIN-SUFFIX,tpns.hk.tencent.com
+
+# ---------- AlipayHK / Ant Bank HK ----------
+DOMAIN-SUFFIX,alipay.hk
+DOMAIN-SUFFIX,antbank.hk
+DOMAIN-SUFFIX,marmot-cloud.com
+DOMAIN,myh2hk.alipay.com
+# ---------- SDK ----------
 DOMAIN-SUFFIX,appcenter.ms
-DOMAIN-SUFFIX,usmartsg.com
-DOMAIN-SUFFIX,coinbase.com
