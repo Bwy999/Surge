@@ -1,0 +1,13 @@
+# Apple 国内受限服务
+DOMAIN-SUFFIX,appsto.re
+# Siri 建议/聚焦搜索
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN,lookup-api.apple.com
+DOMAIN,gateway.icloud.com
+# Apple News
+DOMAIN-SUFFIX,apple.news
+DOMAIN,news-assets.apple.com
+DOMAIN,news-client.apple.com
+DOMAIN,news-client-search.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,news-events.apple.com
