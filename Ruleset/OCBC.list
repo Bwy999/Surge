@@ -1,18 +1,20 @@
+# =====================================================
+# OCBC.list  (Surge Ruleset 规范, 策略在主配置引用处指定)
+# 更新: 2026-07-03
+# =====================================================
+
+# ---------- OCBC 主域 ----------
+DOMAIN-SUFFIX,ocbc.com
+
+# ---------- CDN ----------
 DOMAIN,ocbcstack-prd-cdn.ascentismedia.com
-DOMAIN,internet.ocbc.com
-DOMAIN,www.ocbc.com
-DOMAIN,mb.bff.ocbc.com
-DOMAIN,pafms.ocbc.com
-DOMAIN,mb.bff.ocbc.com
-DOMAIN,appd.ocbc.com
+
+# ---------- 问卷 (Qualtrics, OCBC 租户) ----------
 DOMAIN,ocbc.au1.qualtrics.com
-DOMAIN,au1.qualtrics.com
-DOMAIN,survey.qualtrics.com
 DOMAIN,zn1z6ngdutm8gqq18-ocbc.siteintercept.qualtrics.com
+
+# ---------- 分析 (Adobe, OCBC 租户) ----------
 DOMAIN,overseachinesebankingcorporationlimited.sc.omtrdc.net
 DOMAIN,overseachinesebankin.tt.omtrdc.net
 DOMAIN,ocbc.demdex.net
-DOMAIN,dpm.demdex.net
 DOMAIN,ocbc.data.adobedc.net
-DOMAIN,assets.adobedtm.com
-DOMAIN-SUFFIX,ocbc.com
