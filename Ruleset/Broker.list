@@ -3,7 +3,24 @@
 # 覆盖: moomoo/富途 · uSMART 盈立(新加坡) · 复星财富(星财富)
 # 更新: 2026-07-03
 # =====================================================
-
+# > Interactive Brokers (IBKR) 盈透证券
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.ca
+DOMAIN-SUFFIX,interactivebrokers.com.au
+DOMAIN-SUFFIX,interactivebrokers.co.jp
+DOMAIN-SUFFIX,interactivebrokers.com.sg
+DOMAIN-SUFFIX,interactivebrokers.eu
+DOMAIN-SUFFIX,interactivebrokers.ie
+DOMAIN-SUFFIX,interactivebrokers.hu
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.info
+DOMAIN-SUFFIX,ibkrguides.com
+DOMAIN-SUFFIX,ibkrcampus.com
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,clientam.com
+DOMAIN-KEYWORD,interactivebrokers
 # ---------- moomoo / 富途 ----------
 # 核心域
 DOMAIN-SUFFIX,moomoo.com
