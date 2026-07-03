@@ -29,7 +29,7 @@
 | `AppStore.list` | App Store / 商店前端 | 按需 |
 | `Cryptocurrency.list` | CEX / DEX / 钱包 / 行情 / 链上 | 专用节点 |
 | `Broker.list` | moomoo/富途 · uSMART SG · 复星财富 | 香港节点 |
-| `HKBank.list` | BOCHK · HSBC HK · iFAST · Fusion Bank · AlipayHK | 香港节点 |
+| `HKBank.list` | BOCHK · HSBC HK · iFAST · Fusion Bank · AlipayHK · ZA Bank | 香港节点 |
 | `OCBC.list` | OCBC 新加坡 | 新加坡节点 |
 
 ---
