@@ -1,0 +1,64 @@
+# =====================================================
+# Broker.list  (Surge Ruleset 规范, 策略在主配置引用处指定)
+# 覆盖: moomoo/富途 · uSMART 盈立(新加坡) · 复星财富(星财富)
+# 更新: 2026-07-03
+# =====================================================
+
+# ---------- moomoo / 富途 ----------
+# 核心域
+DOMAIN-SUFFIX,moomoo.com
+DOMAIN-SUFFIX,moomoobull.com
+DOMAIN-SUFFIX,moomooequity.com
+DOMAIN-SUFFIX,moomootrustee.com
+DOMAIN-SUFFIX,futunn.com
+DOMAIN-SUFFIX,futu.com
+DOMAIN-SUFFIX,futu.link
+DOMAIN-SUFFIX,futuapi.com
+DOMAIN-SUFFIX,futustatic.com
+DOMAIN-SUFFIX,qtlcdn.com
+# 编号备用域 (行情/交易通道轮换用)
+DOMAIN-SUFFIX,futu0.com
+DOMAIN-SUFFIX,futu1.com
+DOMAIN-SUFFIX,futu2.com
+DOMAIN-SUFFIX,futu3.com
+DOMAIN-SUFFIX,futu4.com
+DOMAIN-SUFFIX,futu5.com
+DOMAIN-SUFFIX,futu6.com
+DOMAIN-SUFFIX,futu7.com
+DOMAIN-SUFFIX,futu8.com
+DOMAIN-SUFFIX,futu9.com
+# 子公司/业务域
+DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futuhk1.com
+DOMAIN-SUFFIX,futuhk2.com
+DOMAIN-SUFFIX,futuhkapp.com
+DOMAIN-SUFFIX,futuhongkong.com
+DOMAIN-SUFFIX,futuhn.com
+DOMAIN-SUFFIX,futuin.com
+DOMAIN-SUFFIX,futufin.com
+DOMAIN-SUFFIX,fututrade.com
+DOMAIN-SUFFIX,fututrustee.com
+DOMAIN-SUFFIX,futuesop.com
+DOMAIN-SUFFIX,futuinc.com
+DOMAIN-SUFFIX,futuholdings.com
+DOMAIN-SUFFIX,futuniuniu.com
+DOMAIN-SUFFIX,futuchain.com
+DOMAIN-SUFFIX,futuau.com
+
+# ---------- uSMART 盈立 (新加坡) ----------
+DOMAIN-SUFFIX,usmart.sg
+DOMAIN-SUFFIX,usmartsg.com
+DOMAIN-SUFFIX,usmart66.com
+DOMAIN-SUFFIX,usmartglobal.com
+
+# ---------- 复星财富 (星财富) ----------
+# App 交易/用户 API (复星恒利)
+DOMAIN-SUFFIX,fosunhanig.com
+# App 行情数据
+DOMAIN-SUFFIX,fswchains.com
+# 行情底层 (老虎证券 BaaS 通道)
+DOMAIN-SUFFIX,itigertech.com
+# 官网 / H5
+DOMAIN-SUFFIX,fosunwealth.com
+DOMAIN-SUFFIX,fotechwealth.com
+DOMAIN-SUFFIX,fosunxcz.com
