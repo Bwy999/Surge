@@ -1,0 +1,7 @@
+# Apple ID 认证 / TestFlight
+DOMAIN,account.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,idmsa.apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,testflight.apple.com
+DOMAIN,beta.itunes.apple.com
