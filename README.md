@@ -23,7 +23,7 @@
 
 | 文件 | 用途 | 建议策略 |
 |---|---|---|
-| `ApplePush.list` | APNs 推送长连接 | `DIRECT` |
+| `ApplePush.list` | APNs 推送长连接 | `代理` |
 | `AppleDirect.list` | 系统更新 / App 下载 / CDN | `DIRECT` |
 | `AppleService.list` | 受限服务（TV+ / 地区限定内容） | 代理 |
 | `AppStore.list` | App Store / 商店前端 | 按需 |
