@@ -1,4 +1,5 @@
 # Proxy (基于 ConnersHua/RuleGo, 已剔除: 自维护 Crypto 重复项 / AI / Apple / X / Telegram)
+DOMAIN-SUFFIX,coinmetrics.io
 DOMAIN-SUFFIX,500px.com
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,9gag.com
