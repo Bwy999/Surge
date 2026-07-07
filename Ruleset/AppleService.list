@@ -11,3 +11,5 @@ DOMAIN,news-client.apple.com
 DOMAIN,news-client-search.apple.com
 DOMAIN,news-edge.apple.com
 DOMAIN,news-events.apple.com
+# > Apple Sports / News 体育数据
+DOMAIN-SUFFIX,sports.apple.com
