@@ -1,0 +1,109 @@
+# NAME: OpenAI
+# UPDATED: 2025-07-14
+# 基于 blackmatrix7/ios_rule_script 整理
+
+# === 核心域名 ===
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,ai.com
+DOMAIN-KEYWORD,openai
+
+# === Sora ===
+DOMAIN-SUFFIX,sora.com
+
+# === 登录鉴权 ===
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,identrust.com
+
+# === 人机验证 Arkose ===
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+
+# === 语音模式 LiveKit ===
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+
+# === 特性开关 / 埋点 ===
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,observeit.net
+DOMAIN,browser-intake-datadoghq.com
+
+# === CDN / 存储 ===
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,static.cloudflareinsights.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+
+# === 第三方组件 ===
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,stripe.com
+
+# === IP ===
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
+IP-ASN,20473,no-resolve
+
+# Claude / Anthropic
+# Updated: 2026-07-14
+
+# ======== 核心域名 ========
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+
+# ======== CDN & 静态资源 ========
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,cdn.usefathom.com
+
+# ======== 认证 & 内容 ========
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+
+# ======== 监控 / 遥测 ========
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-KEYWORD,datadoghq
+
+# ======== 客服 ========
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+
+# ======== Feature Flags ========
+DOMAIN-SUFFIX,statsigapi.net
+
+# ======== 反欺诈 ========
+DOMAIN-KEYWORD,sift
+
+# ======== Google 静态资源 ========
+DOMAIN,t0.gstatic.com
+DOMAIN,t1.gstatic.com
+DOMAIN,t2.gstatic.com
+DOMAIN,t3.gstatic.com
+
+# ======== Claude Code 更新 / 下载 ========
+DOMAIN,storage.googleapis.com
+
+# ======== Anthropic 自有 IP 段 ========
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
+
+# ======== 关键字兜底 ========
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,anthropic
