@@ -213,7 +213,6 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # ---------- 通用 SDK / 统计 ----------
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,segment.com
 DOMAIN-SUFFIX,appsflyersdk.com
