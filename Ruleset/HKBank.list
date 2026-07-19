@@ -1,9 +1,11 @@
 # =====================================================
 # HKBank.list  (Surge Ruleset 规范, 策略在主配置引用处指定)
 # 覆盖: BOCHK · HSBC HK · iFAST · Fusion · AlipayHK · ZA Bank
-# 更新: 2026-07-03
+# 更新: 2026-07-18
 # =====================================================
-
+#Starryblu
+DOMAIN-SUFFIX,starryblu.com
+DOMAIN-SUFFIX,pandaremit.com
 # ---------- 中银香港 BOCHK / BoC Pay+ ----------
 DOMAIN-SUFFIX,bochk.com
 DOMAIN-SUFFIX,boccc.com.hk
