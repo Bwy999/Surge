@@ -4,6 +4,7 @@
 # 说明: 已去重、删除被 DOMAIN-SUFFIX 覆盖的冗余 DOMAIN 条目
 # =====================================================
 DOMAIN-SUFFIX,llama.fi
+DOMAIN-SUFFIX,cryptocompare.com
 DOMAIN-SUFFIX,coingecko.com
 DOMAIN-SUFFIX,coinpaprika.com
 # ---------- 交易所 · Binance ----------
