@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.fm
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,chatgpt.site
 
 # > CDN / 存储
 DOMAIN-SUFFIX,openaicom.imgix.net
