@@ -1,12 +1,10 @@
-# NAME: AI
-# AUTHOR: Bwy999
-# REPO: https://github.com/Bwy999/Surge
-# UPDATED: 2026-07-30
-#
 # 规范: 无 DOMAIN-KEYWORD / 无内联策略 / IP 类规则一律 no-resolve
 # 用法: RULE-SET,https://raw.githubusercontent.com/Bwy999/Surge/master/Ruleset/AI.list,AI,extended-matching
 #
-# 注意: 本列表须排在 Google 规则与 Proxy 兜底之前
+# 注意:
+#   1. 本列表须排在 Google 规则与 Proxy 兜底之前
+#   2. 本列表须排在金融类规则(Broker/HKBank/OCBC)之后，避免抢走券商银行的鉴权域名
+#   3. 通用基础设施(auth0/stripe/sentry/segment 等)已移出，见文末说明
 
 ##############################################
 # OpenAI / ChatGPT
@@ -19,28 +17,21 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.fm
 DOMAIN-SUFFIX,sora.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,chatgpt.site
 
 # > CDN / 存储
-DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN,openaicom.imgix.net
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,static.cloudflareinsights.com
 
-# > 人机验证 Arkose
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
+# > 人机验证（必须与主域同出口，否则验证死循环）
+DOMAIN,challenges.cloudflare.com
+DOMAIN-SUFFIX,arkoselabs.com
 
 # > 语音模式 LiveKit
 DOMAIN-SUFFIX,livekit.cloud
-
-# > 零散 IP
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
 
 ##############################################
 # Anthropic / Claude
@@ -67,41 +58,15 @@ IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
 
 ##############################################
-# 共享基础设施
-# 说明: 多家 app 通用的鉴权 / 开关 / 埋点服务
-#       ChatGPT 地区判定依赖此段，缺一即报"地区不可用"
+# 地区判定 / 特性开关
+# 说明: ChatGPT 地区判定依赖此段，缺一即报"地区不可用"
+#       仅保留 AI 强相关项，其余通用基础设施已移出
 ##############################################
 
-# > 鉴权
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,identrust.com
-
-# > 特性开关（地区判定关键）
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,prodregistryv2.org
-DOMAIN-SUFFIX,launchdarkly.com
-
-# > 订阅权益校验（地区判定关键）
-DOMAIN-SUFFIX,revenuecat.com
-
-# > 埋点 / 监控
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,observeit.net
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,browser-intake-us5-datadoghq.com
-
-# > 客服 / 搜索 / 反欺诈
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,siftscience.com
-
-# > 支付（可选，会影响其他 app 的支付路径）
-DOMAIN-SUFFIX,stripe.com
 
 ##############################################
 # Google Gemini
@@ -176,4 +141,5 @@ DOMAIN-SUFFIX,v0.dev
 DOMAIN-SUFFIX,character.ai
 DOMAIN-SUFFIX,character-ai.com
 DOMAIN-SUFFIX,jasper.ai
-DOMAIN-SUFFIX,quillbot.com
+
+
