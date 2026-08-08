@@ -214,13 +214,4 @@ DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 
 # ---------- 通用 SDK / 统计 ----------
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,segment.com
-DOMAIN-SUFFIX,appsflyersdk.com
-DOMAIN-SUFFIX,appsflayer.com
-DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-SUFFIX,intercomassets.com
-DOMAIN-SUFFIX,typeform.com
-DOMAIN-SUFFIX,ping0.cc
-DOMAIN-SUFFIX,onesignal.com
-DOMAIN,cloudflare-dns.com
+
