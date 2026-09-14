@@ -18,9 +18,7 @@ DOMAIN,saaszhhk.yundzh.com
 DOMAIN-SUFFIX,trkd-hs.com
 
 # ---------- 汇丰香港 HSBC HK ----------
-DOMAIN-SUFFIX,hsbc.com.hk
-# HSBC 风控 (ThreatMetrix 设备指纹)
-DOMAIN-SUFFIX,online-metrix.net
+
 
 # ---------- iFAST Global Bank / FSM ----------
 DOMAIN-SUFFIX,ifastgb.com
